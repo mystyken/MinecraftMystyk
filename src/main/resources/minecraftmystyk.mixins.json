@@ -3,7 +3,10 @@
 	"package": "com.mystyk.minecraftmystyk.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+      	"MystykMixin"
+	],
+	"client": [
+		"AbstractClientPlayerEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "S": {
+      "item": "minecraftmystyk:ender_shard_fragment"
+    }
+  },
+  "pattern": [
+    "ESE",
+    "S S",
+    "ESE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraftmystyk:ender_shard"
+  }
+}

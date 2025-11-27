@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraftmystyk:ender_shard_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraftmystyk:ender_shard"
+  }
+}

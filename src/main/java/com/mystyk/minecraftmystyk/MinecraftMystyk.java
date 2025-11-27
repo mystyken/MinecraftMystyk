@@ -1,5 +1,8 @@
 package com.mystyk.minecraftmystyk;
 
+import com.mystyk.minecraftmystyk.block.ModBlocks;
+import com.mystyk.minecraftmystyk.component.ModDataComponentTypes;
+import com.mystyk.minecraftmystyk.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,9 @@ public class MinecraftMystyk implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
+		ModDataComponentTypes.registerDataComponentTypes();
 	}
 }

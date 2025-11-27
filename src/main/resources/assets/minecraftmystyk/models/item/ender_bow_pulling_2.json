@@ -1,0 +1,6 @@
+{
+  "parent": "minecraftmystyk:item/ender_bow",
+  "textures": {
+    "layer0": "minecraftmystyk:item/ender_bow_pulling_2"
+  }
+}

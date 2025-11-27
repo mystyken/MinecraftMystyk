@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraftmystyk:item/ender_helm",
+    "layer1": "minecraft:trims/items/helmet_trim_gold"
+  }
+}

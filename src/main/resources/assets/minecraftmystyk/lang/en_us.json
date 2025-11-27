@@ -1,0 +1,29 @@
+{
+  "item.minecraftmystyk.ender_shard": "Ender Shard",
+  "item.minecraftmystyk.ender_shard_fragment": "Ender Shard Fragment",
+
+  "item.minecraftmystyk.fender_armor_trim_smithing_template": "Smithing Template",
+
+  "item.minecraftmystyk.midas_wand": "Midas Wand",
+
+
+  "item.minecraftmystyk.ender_helm": "Ender Infused Helm",
+  "item.minecraftmystyk.ender_chest": "Ender Infused Bracers",
+  "item.minecraftmystyk.ender_legs": "Ender Infused Greaves",
+  "item.minecraftmystyk.ender_feet": "Ender Infused Heels",
+
+  "item.minecraftmystyk.ender_sword": "Ender Infused Sword",
+  "item.minecraftmystyk.ender_pickaxe": "Ender Infused Pickaxe",
+  "item.minecraftmystyk.ender_axe": "Ender Infused Axe",
+  "item.minecraftmystyk.ender_shovel": "Ender Infused Shovel",
+  "item.minecraftmystyk.ender_hoe": "Ender Infused Hoe",
+
+  "item.minecraftmystyk.ender_bow": "Ender Strung Bow",
+
+  "block.minecraftmystyk.ender_shard_block": "Ender Shard Block",
+  "block.minecraftmystyk.ender_shard_ore": "Ender Shard Ore",
+
+
+  "trim_material.minecraftmystyk.ender_shard": "Ender Shard Material",
+  "trim_pattern.minecraftmystyk.fender": "Fender Armor Trim"
+}

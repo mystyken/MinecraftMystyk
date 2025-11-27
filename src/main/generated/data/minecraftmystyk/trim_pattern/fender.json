@@ -1,0 +1,8 @@
+{
+  "asset_id": "minecraftmystyk:fender",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minecraftmystyk.fender"
+  },
+  "template_item": "minecraftmystyk:fender_armor_trim_smithing_template"
+}
