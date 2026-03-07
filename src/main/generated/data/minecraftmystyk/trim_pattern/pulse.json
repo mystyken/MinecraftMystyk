@@ -1,0 +1,8 @@
+{
+  "asset_id": "minecraftmystyk:pulse",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.minecraftmystyk.pulse"
+  },
+  "template_item": "minecraftmystyk:pulse_armor_trim_smithing_template"
+}

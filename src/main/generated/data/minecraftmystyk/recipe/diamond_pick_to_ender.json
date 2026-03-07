@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraftmystyk:ender_shard"
+  },
+  "base": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraftmystyk:ender_pickaxe"
+  },
+  "template": {
+    "item": "minecraftmystyk:ender_upgrade_smithing_template"
+  }
+}

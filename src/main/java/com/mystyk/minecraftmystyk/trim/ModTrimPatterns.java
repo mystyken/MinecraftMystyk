@@ -14,9 +14,11 @@ import net.minecraft.util.Util;
 
 public class ModTrimPatterns {
     public static final RegistryKey<ArmorTrimPattern> FENDER = RegistryKey.of(RegistryKeys.TRIM_PATTERN, Identifier.of(MinecraftMystyk.MOD_ID, "fender"));
+    public static final RegistryKey<ArmorTrimPattern> PULSE = RegistryKey.of(RegistryKeys.TRIM_PATTERN, Identifier.of(MinecraftMystyk.MOD_ID, "pulse"));
 
     public static void bootstrap(Registerable<ArmorTrimPattern> context) {
         register(context, ModItems.FENDER_SMITHING_TEMPLATE, FENDER);
+        register(context, ModItems.PULSE_SMITHING_TEMPLATE, PULSE);
     }
 
     private static void register(Registerable<ArmorTrimPattern> context, Item item, RegistryKey<ArmorTrimPattern> key) {

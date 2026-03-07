@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "C": {
+      "item": "minecraftmystyk:advanced_echo_shard"
+    },
+    "S": {
+      "item": "minecraftmystyk:pulse_armor_trim_smithing_template"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraftmystyk:pulse_armor_trim_smithing_template"
+  }
+}

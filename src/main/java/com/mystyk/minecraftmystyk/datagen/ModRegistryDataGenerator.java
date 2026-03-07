@@ -1,5 +1,7 @@
 package com.mystyk.minecraftmystyk.datagen;
 
+import com.mystyk.minecraftmystyk.world.ModConfiguredFeatures;
+import com.mystyk.minecraftmystyk.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
 import net.minecraft.registry.RegistryKeys;
@@ -16,6 +18,9 @@ public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider {
     protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.TRIM_MATERIAL));
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.TRIM_PATTERN));
+
+        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));
+        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE));
     }
 
     @Override

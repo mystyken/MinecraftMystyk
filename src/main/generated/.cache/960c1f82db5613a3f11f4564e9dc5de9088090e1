@@ -1,3 +1,5 @@
-// 1.21	2025-11-27T08:22:51.5888207	MinecraftMystyk/Block Loot Tables
+// 1.21	2026-03-07T01:37:05.526447	MinecraftMystyk/Block Loot Tables
 b1a90a96fb800899d1ddd1f7a2c99b2309b0762d data\minecraftmystyk\loot_table\blocks\ender_shard_block.json
+fedb8a3d4ec0de5436c7fc54bf0137cf8a287313 data\minecraftmystyk\loot_table\blocks\advanced_sculk_catalyst.json
 d787c095695f3e84eb526acbec051a2ec0bf632c data\minecraftmystyk\loot_table\blocks\ender_shard_ore.json
+3ff677ff5ed761d589b4bc272fe0444d846931ea data\minecraftmystyk\loot_table\blocks\echoing_ore.json

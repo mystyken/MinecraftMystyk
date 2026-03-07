@@ -41,7 +41,9 @@
         "trims/models/armor/flow",
         "trims/models/armor/flow_leggings",
         "minecraftmystyk:trims/models/armor/fender",
-        "minecraftmystyk:trims/models/armor/fender_leggings"
+        "minecraftmystyk:trims/models/armor/fender_leggings",
+        "minecraftmystyk:trims/models/armor/pulse",
+        "minecraftmystyk:trims/models/armor/pulse_leggings"
       ],
       "palette_key": "trims/color_palettes/trim_palette",
       "permutations": {
@@ -59,7 +61,8 @@
         "gold_darker": "trims/color_palettes/gold_darker",
         "diamond_darker": "trims/color_palettes/diamond_darker",
         "netherite_darker": "trims/color_palettes/netherite_darker",
-        "ender_shard": "minecraftmystyk:trims/color_palettes/ender_shard"
+        "ender_shard": "minecraftmystyk:trims/color_palettes/ender_shard",
+        "advanced_echo_shard": "minecraftmystyk:trims/color_palettes/advanced_echo_shard"
       }
     }
   ]

@@ -16,6 +16,9 @@ public class ModBlocks {
     public static final Block ENDER_SHARD_BLOCK = registerBlock("ender_shard_block", new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
     public static final Block ENDER_SHARD_ORE = registerBlock("ender_shard_ore", new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
+    public static final Block ADVANCED_SCULK_CATALYST = registerBlock("advanced_sculk_catalyst", new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.SCULK_CATALYST)));
+    public static final Block ECHOING_ORE = registerBlock("echoing_ore", new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.SCULK_SHRIEKER)));
+
     //public static final Block ENCHANTED_GOLDEN_WITHER_SKELETON_SKULL = registerBlock("enchanted_golden_wither_skeleton_skull",
     //        new SkullBlock((SkullBlock.SkullType) Blocks.WITHER_SKELETON_SKULL.getDefaultState(),
     //                AbstractBlock.Settings.create().strength(2f)));
@@ -40,6 +43,8 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.ENDER_SHARD_BLOCK);
             entries.add(ModBlocks.ENDER_SHARD_ORE);
+            entries.add(ModBlocks.ADVANCED_SCULK_CATALYST);
+            entries.add(ModBlocks.ECHOING_ORE);
         });
     }
 }

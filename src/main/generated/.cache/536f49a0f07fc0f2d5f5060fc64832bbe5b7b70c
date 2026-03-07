@@ -1,3 +1,9 @@
-// 1.21	2025-11-27T08:22:51.5903261	MinecraftMystyk/
+// 1.21	2026-03-07T01:37:05.5295099	MinecraftMystyk/
+0260424f2664f7792e535a5f73afd380070755b2 data\minecraftmystyk\trim_pattern\pulse.json
+f046d9dadf3fc7bb4e92b34e83cd450d9d4ed66c data\minecraftmystyk\worldgen\placed_feature\ender_shard_ore_placed.json
+9d2027e5ca046fe18077d594787665197791fd0d data\minecraftmystyk\worldgen\configured_feature\ender_shard_ore.json
+10093c455843514996fe701eaf6c479cec7d8b8d data\minecraftmystyk\worldgen\configured_feature\echo_shard_ore.json
 77d0e4b18d2f28868fdd73b7f522d92b70d45440 data\minecraftmystyk\trim_pattern\fender.json
 eaa5b6fcecf8055adb1724211642dd7b6c245482 data\minecraftmystyk\trim_material\ender_shard.json
+7cc4c5ba525cade4efdfad9e4ea5ea85c4d4323f data\minecraftmystyk\trim_material\advanced_echo_shard.json
+a86df3338cfc12912a23affda0522924cd7afcd3 data\minecraftmystyk\worldgen\placed_feature\echoing_ore_placed.json

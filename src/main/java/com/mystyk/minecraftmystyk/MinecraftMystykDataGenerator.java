@@ -3,6 +3,8 @@ package com.mystyk.minecraftmystyk;
 import com.mystyk.minecraftmystyk.datagen.*;
 import com.mystyk.minecraftmystyk.trim.ModTrimMaterials;
 import com.mystyk.minecraftmystyk.trim.ModTrimPatterns;
+import com.mystyk.minecraftmystyk.world.ModConfiguredFeatures;
+import com.mystyk.minecraftmystyk.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -25,5 +27,8 @@ public class MinecraftMystykDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraftmystyk:block/advanced_sculk_catalyst_bottom",
+    "east": "minecraftmystyk:block/advanced_sculk_catalyst_side",
+    "north": "minecraftmystyk:block/advanced_sculk_catalyst_side",
+    "particle": "minecraftmystyk:block/advanced_sculk_catalyst_side",
+    "south": "minecraftmystyk:block/advanced_sculk_catalyst_side",
+    "up": "minecraftmystyk:block/advanced_sculk_catalyst_top",
+    "west": "minecraftmystyk:block/advanced_sculk_catalyst_side"
+  }
+}

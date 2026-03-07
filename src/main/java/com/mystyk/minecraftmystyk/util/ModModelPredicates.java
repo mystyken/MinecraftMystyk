@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 
 public class ModModelPredicates {
     public static void registerModelPredicates() {
-        registerCustomBow(ModItems.ENDER_STRUNG_BOW);
+        //registerCustomBow(ModItems.ENDER_STRUNG_BOW);
     }
     private static void registerCustomBow(Item item) {
         ModelPredicateProviderRegistry.register(item, Identifier.ofVanilla("pull"), (stack, world, entity, seed) -> {

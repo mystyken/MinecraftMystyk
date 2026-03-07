@@ -12,8 +12,10 @@ import javax.swing.text.html.HTML;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> NEEDS_ENDER_INFUSED_TOOL = createTag("needs_ender_infsued_tool");
+        public static final TagKey<Block> NEEDS_ENDER_INFUSED_TOOL = createTag("needs_ender_infused_tool");
+        public static final TagKey<Block> NEEDS_ECHOING_TOOL = createTag("needs_ender_infused_tool");
         public static final TagKey<Block> INCORRECT_FOR_ENDER_INFUSED_TOOL = createTag("incorrect_for_ender_infused_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ECHOING_TOOL = createTag("incorrect_for_echoing_tool");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(MinecraftMystyk.MOD_ID, name));

@@ -18,27 +18,59 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.ENDER_INFUSED_SWORD);
+                .add(ModItems.ENDER_INFUSED_SWORD)
+                .add(ModItems.ECHOING_SWORD);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(ModItems.ENDER_INFUSED_PICKAXE);
+                .add(ModItems.ENDER_INFUSED_PICKAXE)
+                .add(ModItems.ECHOING_PICKAXE);
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(ModItems.ENDER_INFUSED_AXE);
+                .add(ModItems.ENDER_INFUSED_AXE)
+                .add(ModItems.ECHOING_AXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.ENDER_INFUSED_SHOVEL);
+                .add(ModItems.ENDER_INFUSED_SHOVEL)
+                .add(ModItems.ECHOING_SHOVEL);
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(ModItems.ENDER_INFUSED_HOE);
+                .add(ModItems.ENDER_INFUSED_HOE)
+                .add(ModItems.ECHOING_HOE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.ENDER_INFUSED_HELM)
+                .add(ModItems.ECHOING_HELM);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.ENDER_INFUSED_BRACERS)
+                .add(ModItems.ECHOING_BRACERS);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.ENDER_INFUSED_GREAVES)
+                .add(ModItems.ECHOING_GREAVES);
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.ENDER_INFUSED_HEELS)
+                .add(ModItems.ECHOING_HEELS);
+
+        getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.MIDAS_WAND);
+
+        /*getOrCreateTagBuilder(ItemTags.MACE_ENCHANTABLE)
+                .add(ModItems.ENDER_MACE);*/
 
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ENDER_INFUSED_HELM)
                 .add(ModItems.ENDER_INFUSED_BRACERS)
                 .add(ModItems.ENDER_INFUSED_GREAVES)
-                .add(ModItems.ENDER_INFUSED_HEELS);
+                .add(ModItems.ENDER_INFUSED_HEELS)
+                .add(ModItems.ECHOING_HELM)
+                .add(ModItems.ECHOING_BRACERS)
+                .add(ModItems.ECHOING_GREAVES)
+                .add(ModItems.ECHOING_HEELS);
 
         getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
-                .add(ModItems.ENDER_SHARD);
+                .add(ModItems.ENDER_SHARD)
+                .add(ModItems.ADVANCED_ECHO_SHARD);
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
-                .add(ModItems.FENDER_SMITHING_TEMPLATE);
+                .add(ModItems.FENDER_SMITHING_TEMPLATE)
+                .add(ModItems.PULSE_SMITHING_TEMPLATE)
+                .add(ModItems.ENDER_UPGRADE_SMITHING_TEMPLATE)
+                .add(ModItems.ECHO_UPGRADE_SMITHING_TEMPLATE);
+
     }
 }

@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -28,6 +29,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.ENDER_SHARD_BLOCK);
         addDrop(ModBlocks.ENDER_SHARD_ORE, oreDrops(ModBlocks.ENDER_SHARD_ORE, ModItems.ENDER_SHARD_FRAGMENT));
+
+        addDrop(ModBlocks.ADVANCED_SCULK_CATALYST);
+        addDrop(ModBlocks.ECHOING_ORE, oreDrops(ModBlocks.ECHOING_ORE, ModItems.ADVANCED_ECHO_FRAGMENT));
+
+
 
         //addDrop(ModBlocks.ENCHANTED_GOLDEN_WITHER_SKELETON_SKULL);
     }

@@ -3,6 +3,10 @@
     "minecraftmystyk:ender_helm",
     "minecraftmystyk:ender_chest",
     "minecraftmystyk:ender_legs",
-    "minecraftmystyk:ender_feet"
+    "minecraftmystyk:ender_feet",
+    "minecraftmystyk:echo_helm",
+    "minecraftmystyk:echo_chest",
+    "minecraftmystyk:echo_legs",
+    "minecraftmystyk:echo_feet"
   ]
 }

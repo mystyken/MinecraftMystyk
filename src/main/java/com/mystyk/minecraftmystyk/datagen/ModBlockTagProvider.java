@@ -20,11 +20,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.ENDER_SHARD_BLOCK)
                 .add(ModBlocks.ENDER_SHARD_ORE);
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.ADVANCED_SCULK_CATALYST)
+                .add(ModBlocks.ECHOING_ORE);
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.ENDER_SHARD_ORE)
-                .add(ModBlocks.ENDER_SHARD_BLOCK);
+                .add(ModBlocks.ENDER_SHARD_BLOCK)
+                .add(ModBlocks.ADVANCED_SCULK_CATALYST)
+                .add(ModBlocks.ECHOING_ORE);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ENDER_INFUSED_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_ECHOING_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }

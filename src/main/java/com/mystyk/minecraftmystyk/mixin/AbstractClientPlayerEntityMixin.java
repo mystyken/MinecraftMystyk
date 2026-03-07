@@ -23,7 +23,7 @@ public abstract class AbstractClientPlayerEntityMixin extends PlayerEntity {
         super(world, pos, yaw, gameProfile);
     }
 
-    @Inject(method = "getFovMultiplier", at = @At(value = "TAIL"), locals = LocalCapture.CAPTURE_FAILSOFT, cancellable = true)
+    /*@Inject(method = "getFovMultiplier", at = @At(value = "TAIL"), locals = LocalCapture.CAPTURE_FAILSOFT, cancellable = true)
     private void getFovMultiplierMixin(CallbackInfoReturnable<Float> info, float f) {
         Item item = this.getActiveItem().getItem();
         ItemStack itemstack = this.getActiveItem();
@@ -34,5 +34,5 @@ public abstract class AbstractClientPlayerEntityMixin extends PlayerEntity {
             f *= 1.0f - g * 0.15f;
             info.setReturnValue(MathHelper.lerp(MinecraftClient.getInstance().options.getFovEffectScale().getValue().floatValue(), 1.0f, f));
         }
-    }
+    }*/
 }

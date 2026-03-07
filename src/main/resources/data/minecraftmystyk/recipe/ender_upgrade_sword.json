@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": { "item": "minecraftmystyk:ender_shard" },
+  "base": { "item": "minecraft:diamond_sword" },
+  "template": { "item": "minecraftmystyk:ender_upgrade_smithing_template" },
+  "result": { "item": "minecraftmystyk:ender_sword" }
+}

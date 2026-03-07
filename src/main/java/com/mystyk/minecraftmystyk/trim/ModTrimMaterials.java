@@ -20,10 +20,14 @@ import java.util.Map;
 public class ModTrimMaterials {
     public static final RegistryKey<ArmorTrimMaterial> ENDER_SHARD = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
             Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard"));
+    public static final RegistryKey<ArmorTrimMaterial> ADVANCED_ECHO_SHARD = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
+            Identifier.of(MinecraftMystyk.MOD_ID, "advanced_echo_shard"));
 
     public static void bootstrap(Registerable<ArmorTrimMaterial> registerable) {
         register(registerable, ENDER_SHARD, Registries.ITEM.getEntry(ModItems.ENDER_SHARD),
                 Style.EMPTY.withColor(TextColor.parse("#fc039d").getOrThrow()), 1.0f);
+        register(registerable, ADVANCED_ECHO_SHARD, Registries.ITEM.getEntry(ModItems.ADVANCED_ECHO_SHARD),
+                Style.EMPTY.withColor(TextColor.parse("#19628a").getOrThrow()), 1.0f);
 
     }
 

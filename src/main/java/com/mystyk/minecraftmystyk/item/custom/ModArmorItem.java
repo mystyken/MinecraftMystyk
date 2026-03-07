@@ -17,9 +17,11 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
                     .put(ModArmorMaterials.ENDER_SHARD_ARMOR_MATERIAL,
-                            List.of(new StatusEffectInstance(StatusEffects.RESISTANCE, 1, 1, false, false)))
+                            List.of(new StatusEffectInstance(StatusEffects.SLOWNESS, 10, 1, false, false), new StatusEffectInstance(StatusEffects.RESISTANCE, 10, 1, false, false)))
+                    .put(ModArmorMaterials.ADVANCED_ECHO_SHARD_ARMOR_MATERIAL,
+                            List.of(new StatusEffectInstance(StatusEffects.DARKNESS, 200, 1, false, false), new StatusEffectInstance(StatusEffects.STRENGTH, 10, 1, false, false)))
                     .put(ArmorMaterials.NETHERITE,
-                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1, 0, false, false)))
+                            List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 10, 0, false, false)))
                     .build();
 
     public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraftmystyk:advanced_echo_shard"
+  },
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraftmystyk:echo_feet"
+  },
+  "template": {
+    "item": "minecraftmystyk:echo_upgrade_smithing_template"
+  }
+}

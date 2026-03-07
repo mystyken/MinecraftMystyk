@@ -25,6 +25,15 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.BODY, 11);
             }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.ENDER_SHARD),
                     List.of(new ArmorMaterial.Layer(Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard"))),3,0));
+    public static final RegistryEntry<ArmorMaterial> ADVANCED_ECHO_SHARD_ARMOR_MATERIAL = registerArmorMaterial("advanced_echo_shard",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 8);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 11);
+            }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.ADVANCED_ECHO_SHARD),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(MinecraftMystyk.MOD_ID, "advanced_echo_shard"))),3,0));
 
 
 

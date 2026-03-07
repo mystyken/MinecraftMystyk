@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "S": {
+      "item": "minecraftmystyk:advanced_echo_fragment"
+    }
+  },
+  "pattern": [
+    "QSQ",
+    "SCS",
+    "QSQ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraftmystyk:advanced_echo_shard"
+  }
+}

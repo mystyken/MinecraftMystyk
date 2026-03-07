@@ -10,7 +10,8 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    ENDER_SHARD(ModTags.Blocks.INCORRECT_FOR_ENDER_INFUSED_TOOL, 2031, 9.0F, 4.0F, 35, () -> Ingredient.ofItems(ModItems.ENDER_SHARD));
+    ENDER_SHARD(ModTags.Blocks.INCORRECT_FOR_ENDER_INFUSED_TOOL, 2031, 9.0F, 4.0F, 35, () -> Ingredient.ofItems(ModItems.ENDER_SHARD)),
+    ADVANCED_ECHO_SHARD(ModTags.Blocks.INCORRECT_FOR_ECHOING_TOOL, 2031, 9.0F, 4.0F, 35, () -> Ingredient.ofItems(ModItems.ADVANCED_ECHO_SHARD));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
