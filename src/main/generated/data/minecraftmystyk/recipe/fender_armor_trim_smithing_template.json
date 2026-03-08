@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:diamond"
-    },
-    "C": {
-      "item": "minecraftmystyk:ender_shard_fragment"
-    },
-    "S": {
-      "item": "minecraftmystyk:fender_armor_trim_smithing_template"
-    }
+    "#": "minecraft:diamond",
+    "C": "minecraftmystyk:ender_shard_fragment",
+    "S": "minecraftmystyk:fender_armor_trim_smithing_template"
   },
   "pattern": [
     "#S#",

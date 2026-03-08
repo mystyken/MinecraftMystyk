@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraftmystyk:ender_shard"
-  },
-  "base": {
-    "item": "minecraft:diamond_helmet"
-  },
+  "addition": "minecraftmystyk:ender_shard",
+  "base": "minecraft:diamond_helmet",
   "result": {
     "count": 1,
     "id": "minecraftmystyk:ender_helm"
   },
-  "template": {
-    "item": "minecraftmystyk:ender_upgrade_smithing_template"
-  }
+  "template": "minecraftmystyk:ender_upgrade_smithing_template"
 }

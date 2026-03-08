@@ -27,8 +27,7 @@ public class MidasWand extends Item {
                     Blocks.DIAMOND_ORE, Blocks.GOLD_ORE,
                     Blocks.DEEPSLATE_EMERALD_ORE, Blocks.DEEPSLATE_GOLD_ORE,
                     Blocks.DEEPSLATE_IRON_ORE, Blocks.DEEPSLATE_GOLD_ORE,
-                    Blocks.DEEPSLATE_DIAMOND_ORE, Blocks.DEEPSLATE_GOLD_ORE,
-                    ModBlocks.ENDER_SHARD_ORE, Blocks.ANCIENT_DEBRIS
+                    Blocks.DEEPSLATE_DIAMOND_ORE, Blocks.DEEPSLATE_GOLD_ORE
             );
     public MidasWand(Settings settings) {
 

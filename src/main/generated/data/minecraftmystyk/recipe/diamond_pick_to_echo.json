@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraftmystyk:advanced_echo_shard"
-  },
-  "base": {
-    "item": "minecraft:diamond_pickaxe"
-  },
+  "addition": "minecraftmystyk:advanced_echo_shard",
+  "base": "minecraft:diamond_pickaxe",
   "result": {
     "count": 1,
     "id": "minecraftmystyk:echo_pickaxe"
   },
-  "template": {
-    "item": "minecraftmystyk:echo_upgrade_smithing_template"
-  }
+  "template": "minecraftmystyk:echo_upgrade_smithing_template"
 }

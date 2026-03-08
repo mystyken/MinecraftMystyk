@@ -1,44 +1,42 @@
 package com.mystyk.minecraftmystyk.item;
 
 import com.mystyk.minecraftmystyk.MinecraftMystyk;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.Registries;
+import com.mystyk.minecraftmystyk.util.ModTags;
+import net.minecraft.item.equipment.ArmorMaterial;
+import net.minecraft.item.equipment.EquipmentAsset;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 
 import java.util.EnumMap;
-import java.util.List;
-import java.util.function.Supplier;
 
 public class ModArmorMaterials {
-    public static final RegistryEntry<ArmorMaterial> ENDER_SHARD_ARMOR_MATERIAL = registerArmorMaterial("ender_shard",
-            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 3);
-                map.put(ArmorItem.Type.LEGGINGS, 6);
-                map.put(ArmorItem.Type.CHESTPLATE, 8);
-                map.put(ArmorItem.Type.HELMET, 3);
-                map.put(ArmorItem.Type.BODY, 11);
-            }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.ENDER_SHARD),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard"))),3,0));
-    public static final RegistryEntry<ArmorMaterial> ADVANCED_ECHO_SHARD_ARMOR_MATERIAL = registerArmorMaterial("advanced_echo_shard",
-            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 3);
-                map.put(ArmorItem.Type.LEGGINGS, 6);
-                map.put(ArmorItem.Type.CHESTPLATE, 8);
-                map.put(ArmorItem.Type.HELMET, 3);
-                map.put(ArmorItem.Type.BODY, 11);
-            }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.ADVANCED_ECHO_SHARD),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(MinecraftMystyk.MOD_ID, "advanced_echo_shard"))),3,0));
+    static RegistryKey<? extends Registry<EquipmentAsset>> REGISTRY_KEY = RegistryKey.ofRegistry(Identifier.ofVanilla("equipment_asset"));
+
+    public static final  RegistryKey<EquipmentAsset> ENDER_SHARD_KEY = RegistryKey.of(REGISTRY_KEY, Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard"));
+    public static final  RegistryKey<EquipmentAsset> ADVANCED_ECHO_SHARD_KEY = RegistryKey.of(REGISTRY_KEY, Identifier.of(MinecraftMystyk.MOD_ID, "advanced_echo_shard"));
 
 
 
+    public static final ArmorMaterial ENDER_SHARD_ARMOR_MATERIAL = new ArmorMaterial(500, Util.make(new EnumMap<>(EquipmentType.class), map -> {
+                map.put(EquipmentType.BOOTS, 3);
+                map.put(EquipmentType.LEGGINGS, 6);
+                map.put(EquipmentType.CHESTPLATE, 8);
+                map.put(EquipmentType.HELMET, 3);
+                map.put(EquipmentType.BODY, 11);
+            }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,3,0, ModTags.Items.ENDER_SHARD_REPAIR
+            , ENDER_SHARD_KEY);
+    public static final ArmorMaterial ADVANCED_ECHO_SHARD_ARMOR_MATERIAL = new ArmorMaterial(500, Util.make(new EnumMap<>(EquipmentType.class), map -> {
+                map.put(EquipmentType.BOOTS, 3);
+                map.put(EquipmentType.LEGGINGS, 6);
+                map.put(EquipmentType.CHESTPLATE, 8);
+                map.put(EquipmentType.HELMET, 3);
+                map.put(EquipmentType.BODY, 11);
+            }), 35, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,3,0, ModTags.Items.ADVANCED_ECHO_SHARD_REPAIR
+            , ADVANCED_ECHO_SHARD_KEY);
 
-    public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
-        return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(MinecraftMystyk.MOD_ID, name), material.get());
-    }
+
 }

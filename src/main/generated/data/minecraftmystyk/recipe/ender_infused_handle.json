@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "minecraft:breeze_rod",
+    "F": "minecraftmystyk:ender_shard_fragment"
+  },
+  "pattern": [
+    " F ",
+    "FBF",
+    " F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraftmystyk:ender_infused_handle"
+  }
+}

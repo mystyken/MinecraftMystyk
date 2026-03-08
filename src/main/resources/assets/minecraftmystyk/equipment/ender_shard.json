@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "minecraftmystyk:ender_shard"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "minecraftmystyk:ender_shard"
+      }
+    ]
+  }
+}

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraftmystyk:diamond_legs_to_echo"
+        "recipe": "minecraft:diamond_legs_to_echo"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraftmystyk:diamond_legs_to_echo"
+      "minecraft:diamond_legs_to_echo"
     ]
   }
 }

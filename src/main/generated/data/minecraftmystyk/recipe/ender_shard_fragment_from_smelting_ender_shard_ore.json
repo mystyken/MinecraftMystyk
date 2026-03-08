@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.5,
   "group": "ender_shard",
-  "ingredient": {
-    "item": "minecraftmystyk:ender_shard_ore"
-  },
+  "ingredient": "minecraftmystyk:ender_shard_ore",
   "result": {
     "id": "minecraftmystyk:ender_shard_fragment"
   }

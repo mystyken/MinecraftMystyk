@@ -1,14 +1,16 @@
-// 1.21	2026-03-07T01:37:05.5254158	MinecraftMystyk/Tags for minecraft:item
-ea682ed37a51292fbbab683efc6df8fe6c2cee29 data\minecraft\tags\item\trimmable_armor.json
-eb15b3fd109d59dfa31ab9c946168c9b174582db data\minecraft\tags\item\shovels.json
-8eaff1a579935329cc6044aa838ea0974a76fd39 data\minecraft\tags\item\head_armor.json
-0f10a9569c78cdb1b1f6fbbb9834352d53932d46 data\minecraft\tags\item\axes.json
-60a178786491f6ff3d889d3a6b0bc81c56af529b data\minecraft\tags\item\chest_armor.json
-d10a3b3a707f7b9c32fc1cf04bda3c9ba3715017 data\minecraft\tags\item\hoes.json
-ac65edb4a94dfc9b2d098f93717d0a5c3df5e839 data\minecraft\tags\item\pickaxes.json
-e239c74530992904f88d8d1b03a5d7d0e0145433 data\minecraft\tags\item\leg_armor.json
-34c8dbaccfca51ade0be368e36dd52a6bc34fae6 data\minecraft\tags\item\enchantable\durability.json
-cfb165acd81e0b8f66351da0cef5fd127b7f8b61 data\minecraft\tags\item\trim_materials.json
-f69181da5cce9c038413e0996c05abb0b1809335 data\minecraft\tags\item\trim_templates.json
-deeaa4aaf4a57904b1e0413b93963b59033f6010 data\minecraft\tags\item\foot_armor.json
-19da1d89a459e638f2e6aa9572335081f0374043 data\minecraft\tags\item\swords.json
+// 1.21.4	-999999999-01-01T00:00:00	MinecraftMystyk/Tags for minecraft:item
+0f10a9569c78cdb1b1f6fbbb9834352d53932d46 data/minecraft/tags/item/axes.json
+60a178786491f6ff3d889d3a6b0bc81c56af529b data/minecraft/tags/item/chest_armor.json
+34c8dbaccfca51ade0be368e36dd52a6bc34fae6 data/minecraft/tags/item/enchantable/durability.json
+deeaa4aaf4a57904b1e0413b93963b59033f6010 data/minecraft/tags/item/foot_armor.json
+8eaff1a579935329cc6044aa838ea0974a76fd39 data/minecraft/tags/item/head_armor.json
+d10a3b3a707f7b9c32fc1cf04bda3c9ba3715017 data/minecraft/tags/item/hoes.json
+e239c74530992904f88d8d1b03a5d7d0e0145433 data/minecraft/tags/item/leg_armor.json
+ac65edb4a94dfc9b2d098f93717d0a5c3df5e839 data/minecraft/tags/item/pickaxes.json
+eb15b3fd109d59dfa31ab9c946168c9b174582db data/minecraft/tags/item/shovels.json
+19da1d89a459e638f2e6aa9572335081f0374043 data/minecraft/tags/item/swords.json
+cfb165acd81e0b8f66351da0cef5fd127b7f8b61 data/minecraft/tags/item/trim_materials.json
+ea682ed37a51292fbbab683efc6df8fe6c2cee29 data/minecraft/tags/item/trimmable_armor.json
+10260a9d11ee4e3e23688cc58560511d72cffc1a data/minecraftmystyk/tags/item/echo_repair.json
+c6942fe53e3300a7d4dc5cd60b47035631ac454a data/minecraftmystyk/tags/item/ender_repair.json
+5598a1a9e29c42cd81923dc76641ffd79dd82c5f data/minecraftmystyk/tags/item/super_sword.json

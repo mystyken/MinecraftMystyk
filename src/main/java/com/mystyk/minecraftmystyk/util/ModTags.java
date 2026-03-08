@@ -24,6 +24,9 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+        public static final TagKey<Item> ENDER_SHARD_REPAIR = createTag("ender_repair");
+        public static final TagKey<Item> ADVANCED_ECHO_SHARD_REPAIR = createTag("echo_repair");
+        public static final TagKey<Item> SUPER_SWORD = createTag("super_sword");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(MinecraftMystyk.MOD_ID, name));

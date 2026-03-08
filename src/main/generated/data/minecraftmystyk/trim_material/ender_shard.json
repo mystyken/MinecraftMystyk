@@ -4,6 +4,5 @@
     "color": "#FC039D",
     "translate": "trim_material.minecraftmystyk.ender_shard"
   },
-  "ingredient": "minecraftmystyk:ender_shard",
-  "item_model_index": 1.0
+  "ingredient": "minecraftmystyk:ender_shard"
 }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraftmystyk:diamond_hoe_to_ender"
+        "recipe": "minecraft:diamond_hoe_to_ender"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraftmystyk:diamond_hoe_to_ender"
+      "minecraft:diamond_hoe_to_ender"
     ]
   }
 }

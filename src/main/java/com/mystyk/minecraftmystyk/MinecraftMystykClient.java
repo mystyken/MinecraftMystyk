@@ -1,10 +1,6 @@
 package com.mystyk.minecraftmystyk;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.minecraft.client.item.ModelPredicateProviderRegistry;
-import net.minecraft.item.Item;
-import org.intellij.lang.annotations.Identifier;
-
 public class MinecraftMystykClient implements ClientModInitializer{
     @Override
     public void onInitializeClient() {

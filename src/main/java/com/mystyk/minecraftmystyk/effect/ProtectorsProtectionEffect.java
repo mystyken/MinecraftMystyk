@@ -9,14 +9,14 @@ public class ProtectorsProtectionEffect extends StatusEffect {
         super(category, color);
     }
 
-    @Override
+    /*@Override
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
          if(entity.getHealth() <= 10) {
 
          }
 
         return super.applyUpdateEffect(entity, amplifier);
-    }
+    }*/
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {

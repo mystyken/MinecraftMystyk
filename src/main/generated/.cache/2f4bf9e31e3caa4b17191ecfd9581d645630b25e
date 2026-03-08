@@ -1,5 +1,5 @@
-// 1.21	2026-03-07T01:37:05.5274679	MinecraftMystyk/Tags for minecraft:block
-52edc361ab85d94fd1e3906992ef9165bf12da54 data\minecraft\tags\block\mineable\pickaxe.json
-47373789fea5fe8c16573ff9721f250fbaf196f5 data\minecraft\tags\block\mineable\hoe.json
-ff77d48b8ca64dbff82dd37f3ef90f8bc908c3e2 data\minecraft\tags\block\needs_diamond_tool.json
-ba14ad9ab375f40fef2b8c5b23171fe33263a883 data\minecraftmystyk\tags\block\needs_ender_infused_tool.json
+// 1.21.4	-999999999-01-01T00:00:00	MinecraftMystyk/Tags for minecraft:block
+47373789fea5fe8c16573ff9721f250fbaf196f5 data/minecraft/tags/block/mineable/hoe.json
+52edc361ab85d94fd1e3906992ef9165bf12da54 data/minecraft/tags/block/mineable/pickaxe.json
+ff77d48b8ca64dbff82dd37f3ef90f8bc908c3e2 data/minecraft/tags/block/needs_diamond_tool.json
+ba14ad9ab375f40fef2b8c5b23171fe33263a883 data/minecraftmystyk/tags/block/needs_ender_infused_tool.json

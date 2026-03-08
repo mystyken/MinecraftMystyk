@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "G": {
-      "item": "minecraft:gold_block"
-    },
-    "S": {
-      "item": "minecraft:netherite_sword"
-    }
+    "G": "minecraft:gold_block",
+    "S": "#minecraftmystyk:super_sword"
   },
   "pattern": [
     "GGG",

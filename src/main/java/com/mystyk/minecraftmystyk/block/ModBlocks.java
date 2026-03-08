@@ -8,16 +8,22 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
-    public static final Block ENDER_SHARD_BLOCK = registerBlock("ender_shard_block", new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
-    public static final Block ENDER_SHARD_ORE = registerBlock("ender_shard_ore", new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
+    public static final Block ENDER_SHARD_BLOCK = registerBlock("ender_shard_block",
+            new Block(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard_block"))).strength(4f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
+    public static final Block ENDER_SHARD_ORE = registerBlock("ender_shard_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard_ore"))).strength(3f).requiresTool().sounds(BlockSoundGroup.ANCIENT_DEBRIS)));
 
-    public static final Block ADVANCED_SCULK_CATALYST = registerBlock("advanced_sculk_catalyst", new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.SCULK_CATALYST)));
-    public static final Block ECHOING_ORE = registerBlock("echoing_ore", new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.SCULK_SHRIEKER)));
+    public static final Block ADVANCED_SCULK_CATALYST = registerBlock("advanced_sculk_catalyst",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MinecraftMystyk.MOD_ID, "advanced_sculk_catalyst"))).strength(3f).requiresTool().sounds(BlockSoundGroup.SCULK_CATALYST)));
+    public static final Block ECHOING_ORE = registerBlock("echoing_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 1),AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(MinecraftMystyk.MOD_ID, "echoing_ore"))).strength(3f).requiresTool().sounds(BlockSoundGroup.SCULK_SHRIEKER)));
 
     //public static final Block ENCHANTED_GOLDEN_WITHER_SKELETON_SKULL = registerBlock("enchanted_golden_wither_skeleton_skull",
     //        new SkullBlock((SkullBlock.SkullType) Blocks.WITHER_SKELETON_SKULL.getDefaultState(),
@@ -30,7 +36,7 @@ public class ModBlocks {
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(MinecraftMystyk.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+                new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinecraftMystyk.MOD_ID, name)))));
     }
 
     public static void registerModBlocks() {

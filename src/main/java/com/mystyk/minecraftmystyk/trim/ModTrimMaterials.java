@@ -3,7 +3,7 @@ package com.mystyk.minecraftmystyk.trim;
 import com.mystyk.minecraftmystyk.MinecraftMystyk;
 import com.mystyk.minecraftmystyk.item.ModItems;
 import net.minecraft.item.Item;
-import net.minecraft.item.trim.ArmorTrimMaterial;
+import net.minecraft.item.equipment.trim.ArmorTrimMaterial;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
@@ -25,17 +25,17 @@ public class ModTrimMaterials {
 
     public static void bootstrap(Registerable<ArmorTrimMaterial> registerable) {
         register(registerable, ENDER_SHARD, Registries.ITEM.getEntry(ModItems.ENDER_SHARD),
-                Style.EMPTY.withColor(TextColor.parse("#fc039d").getOrThrow()), 1.0f);
+                Style.EMPTY.withColor(TextColor.parse("#fc039d").getOrThrow()));
         register(registerable, ADVANCED_ECHO_SHARD, Registries.ITEM.getEntry(ModItems.ADVANCED_ECHO_SHARD),
-                Style.EMPTY.withColor(TextColor.parse("#19628a").getOrThrow()), 1.0f);
+                Style.EMPTY.withColor(TextColor.parse("#19628a").getOrThrow()));
 
     }
 
 
 
     private static void register(Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> armorTrimKey,
-                                 RegistryEntry<Item> item, Style style, float itemModelIndex) {
-        ArmorTrimMaterial trimMaterial = new ArmorTrimMaterial(armorTrimKey.getValue().getPath(), item, itemModelIndex, Map.of(),
+                                 RegistryEntry<Item> item, Style style) {
+        ArmorTrimMaterial trimMaterial = new ArmorTrimMaterial(armorTrimKey.getValue().getPath(), item, Map.of(),
                 Text.translatable(Util.createTranslationKey("trim_material", armorTrimKey.getValue())).fillStyle(style));
 
         registerable.register(armorTrimKey, trimMaterial);

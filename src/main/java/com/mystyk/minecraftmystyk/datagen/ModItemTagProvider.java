@@ -5,6 +5,7 @@ import com.mystyk.minecraftmystyk.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -66,11 +67,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ENDER_SHARD)
                 .add(ModItems.ADVANCED_ECHO_SHARD);
 
-        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
-                .add(ModItems.FENDER_SMITHING_TEMPLATE)
-                .add(ModItems.PULSE_SMITHING_TEMPLATE)
-                .add(ModItems.ENDER_UPGRADE_SMITHING_TEMPLATE)
-                .add(ModItems.ECHO_UPGRADE_SMITHING_TEMPLATE);
+        getOrCreateTagBuilder(ModTags.Items.ENDER_SHARD_REPAIR)
+                .add(ModItems.ENDER_SHARD);
+
+        getOrCreateTagBuilder(ModTags.Items.ADVANCED_ECHO_SHARD_REPAIR)
+                .add(ModItems.ADVANCED_ECHO_SHARD);
+
+        getOrCreateTagBuilder(ModTags.Items.SUPER_SWORD)
+                .add(ModItems.ENDER_INFUSED_SWORD)
+                .add(ModItems.ECHOING_SWORD)
+                .add(Items.NETHERITE_SWORD);
 
     }
 }

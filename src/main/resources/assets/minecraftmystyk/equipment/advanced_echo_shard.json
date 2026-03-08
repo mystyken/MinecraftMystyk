@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "minecraftmystyk:advanced_echo_shard"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "minecraftmystyk:advanced_echo_shard"
+      }
+    ]
+  }
+}

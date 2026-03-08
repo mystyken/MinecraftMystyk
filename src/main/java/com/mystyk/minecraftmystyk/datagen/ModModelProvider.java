@@ -1,13 +1,14 @@
 package com.mystyk.minecraftmystyk.datagen;
 
 import com.mystyk.minecraftmystyk.block.ModBlocks;
+import com.mystyk.minecraftmystyk.item.ModArmorMaterials;
 import com.mystyk.minecraftmystyk.item.ModItems;
+import com.mystyk.minecraftmystyk.item.custom.ModArmorItem;
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.item.ArmorItem;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Models;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -45,10 +46,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ENDER_INFUSED_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ENDER_INFUSED_HOE, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDER_INFUSED_HELM));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDER_INFUSED_BRACERS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDER_INFUSED_GREAVES));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ENDER_INFUSED_HEELS));
+
+        itemModelGenerator.registerArmor(ModItems.ENDER_INFUSED_HELM, ModArmorMaterials.ENDER_SHARD_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.ENDER_INFUSED_BRACERS, ModArmorMaterials.ENDER_SHARD_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.ENDER_INFUSED_GREAVES, ModArmorMaterials.ENDER_SHARD_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.ENDER_INFUSED_HEELS, ModArmorMaterials.ENDER_SHARD_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
+
 
         itemModelGenerator.register(ModItems.ECHOING_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ECHOING_PICKAXE, Models.HANDHELD);
@@ -56,9 +59,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ECHOING_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ECHOING_HOE, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ECHOING_HELM));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ECHOING_BRACERS));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ECHOING_GREAVES));
-        itemModelGenerator.registerArmor(((ArmorItem) ModItems.ECHOING_HEELS));
+        itemModelGenerator.registerArmor(ModItems.ECHOING_HELM, ModArmorMaterials.ADVANCED_ECHO_SHARD_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.ECHOING_BRACERS, ModArmorMaterials.ADVANCED_ECHO_SHARD_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.ECHOING_GREAVES, ModArmorMaterials.ADVANCED_ECHO_SHARD_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.ECHOING_HEELS, ModArmorMaterials.ADVANCED_ECHO_SHARD_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
     }
 }
