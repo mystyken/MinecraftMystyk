@@ -1,8 +1,8 @@
-// 1.21.4	-999999999-01-01T00:00:00	MinecraftMystyk/
-d8e9905cf07f1d69b4739916ff147008f1b3a1b0 data/minecraftmystyk/trim_material/advanced_echo_shard.json
-d8be5aefacda24b95c40f8bb10d27f2d4c68fb05 data/minecraftmystyk/trim_material/ender_shard.json
-77d0e4b18d2f28868fdd73b7f522d92b70d45440 data/minecraftmystyk/trim_pattern/fender.json
-0260424f2664f7792e535a5f73afd380070755b2 data/minecraftmystyk/trim_pattern/pulse.json
+// 1.21.11	-999999999-01-01T00:00:00	MinecraftMystyk/
+f2cd8c04f20172c0f0d3907021e77342dfcc0f91 data/minecraftmystyk/trim_material/advanced_echo_shard.json
+850d4aa6e94ec2fed2eb176b18acfc56cb282124 data/minecraftmystyk/trim_material/ender_shard.json
+f4286446e9431c8f916d1f61eba143d516b74f3c data/minecraftmystyk/trim_pattern/fender.json
+4abe369d7ab27151c4f00d659f8d7a917182075f data/minecraftmystyk/trim_pattern/pulse.json
 10093c455843514996fe701eaf6c479cec7d8b8d data/minecraftmystyk/worldgen/configured_feature/echo_shard_ore.json
 9d2027e5ca046fe18077d594787665197791fd0d data/minecraftmystyk/worldgen/configured_feature/ender_shard_ore.json
 a86df3338cfc12912a23affda0522924cd7afcd3 data/minecraftmystyk/worldgen/placed_feature/echoing_ore_placed.json

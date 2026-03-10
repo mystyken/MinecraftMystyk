@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:diamond_helm_to_echo"
+        "recipe": "minecraftmystyk:diamond_helm_to_echo"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:diamond_helm_to_echo"
+      "minecraftmystyk:diamond_helm_to_echo"
     ]
   }
 }

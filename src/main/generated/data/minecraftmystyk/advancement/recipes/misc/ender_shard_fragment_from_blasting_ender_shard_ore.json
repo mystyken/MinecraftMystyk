@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ender_shard_fragment_from_blasting_ender_shard_ore"
+        "recipe": "minecraftmystyk:ender_shard_fragment_from_blasting_ender_shard_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ender_shard_fragment_from_blasting_ender_shard_ore"
+      "minecraftmystyk:ender_shard_fragment_from_blasting_ender_shard_ore"
     ]
   }
 }

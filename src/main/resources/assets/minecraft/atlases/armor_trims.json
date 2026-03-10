@@ -43,7 +43,15 @@
         "minecraftmystyk:trims/entity/humanoid/fender",
         "minecraftmystyk:trims/entity/humanoid_leggings/fender",
         "minecraftmystyk:trims/entity/humanoid/pulse",
-        "minecraftmystyk:trims/entity/humanoid_leggings/pulse"
+        "minecraftmystyk:trims/entity/humanoid_leggings/pulse",
+        "minecraftmystyk:trims/items/helmet_fender",
+        "minecraftmystyk:trims/items/chestplate_fender",
+        "minecraftmystyk:trims/items/leggings_fender",
+        "minecraftmystyk:trims/items/boots_fender",
+        "minecraftmystyk:trims/items/helmet_pulse",
+        "minecraftmystyk:trims/items/chestplate_pulse",
+        "minecraftmystyk:trims/items/leggings_pulse",
+        "minecraftmystyk:trims/items/boots_pulse"
       ],
       "palette_key": "trims/color_palettes/trim_palette",
       "permutations": {

@@ -3,6 +3,5 @@
   "description": {
     "color": "#19628A",
     "translate": "trim_material.minecraftmystyk.advanced_echo_shard"
-  },
-  "ingredient": "minecraftmystyk:advanced_echo_shard"
+  }
 }

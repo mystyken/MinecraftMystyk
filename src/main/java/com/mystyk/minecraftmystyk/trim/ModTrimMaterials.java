@@ -3,6 +3,7 @@ package com.mystyk.minecraftmystyk.trim;
 import com.mystyk.minecraftmystyk.MinecraftMystyk;
 import com.mystyk.minecraftmystyk.item.ModItems;
 import net.minecraft.item.Item;
+import net.minecraft.item.equipment.trim.ArmorTrimAssets;
 import net.minecraft.item.equipment.trim.ArmorTrimMaterial;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.Registries;
@@ -14,8 +15,6 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TextColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
-
-import java.util.Map;
 
 public class ModTrimMaterials {
     public static final RegistryKey<ArmorTrimMaterial> ENDER_SHARD = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
@@ -33,10 +32,11 @@ public class ModTrimMaterials {
 
 
 
-    private static void register(Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> armorTrimKey,
-                                 RegistryEntry<Item> item, Style style) {
-        ArmorTrimMaterial trimMaterial = new ArmorTrimMaterial(armorTrimKey.getValue().getPath(), item, Map.of(),
-                Text.translatable(Util.createTranslationKey("trim_material", armorTrimKey.getValue())).fillStyle(style));
+    private static void register(Registerable<ArmorTrimMaterial> registerable, RegistryKey<ArmorTrimMaterial> armorTrimKey, RegistryEntry<Item> item, Style style) {
+        ArmorTrimMaterial trimMaterial = new ArmorTrimMaterial(
+                ArmorTrimAssets.of(armorTrimKey.getValue().getPath()),
+                Text.translatable(Util.createTranslationKey("trim_material", armorTrimKey.getValue())).fillStyle(style)
+        );
 
         registerable.register(armorTrimKey, trimMaterial);
     }

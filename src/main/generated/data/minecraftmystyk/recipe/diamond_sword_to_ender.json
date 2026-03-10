@@ -3,8 +3,7 @@
   "addition": "minecraftmystyk:ender_shard",
   "base": "minecraft:diamond_sword",
   "result": {
-    "count": 1,
     "id": "minecraftmystyk:ender_sword"
   },
-  "template": "minecraftmystyk:ender_upgrade_smithing_template"
+  "template": "minecraftmystyk:ender_upgrade"
 }

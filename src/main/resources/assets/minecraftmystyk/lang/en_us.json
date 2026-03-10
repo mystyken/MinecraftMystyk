@@ -5,10 +5,10 @@
   "item.minecraftmystyk.advanced_echo_shard": "Advanced Echo Shard",
   "item.minecraftmystyk.advanced_echo_fragment": "Advanced Echo Fragment",
 
-  "item.minecraftmystyk.fender_armor_trim_smithing_template": "Smithing Template",
-  "item.minecraftmystyk.pulse_armor_trim_smithing_template": "Smithing Template",
-  "item.minecraftmystyk.ender_upgrade_smithing_template": "Smithing Template",
-  "item.minecraftmystyk.echo_upgrade_smithing_template": "Smithing Template",
+  "item.minecraftmystyk.fender_armor_trim": "Fender Armor Trim",
+  "item.minecraftmystyk.pulse_armor_trim": "Pulse Armor Trim",
+  "item.minecraftmystyk.ender_upgrade": "Ender Upgrade",
+  "item.minecraftmystyk.echo_upgrade": "Echo Upgrade",
 
   "item.minecraftmystyk.midas_wand": "Midas Wand",
 
@@ -18,6 +18,7 @@
   "item.minecraftmystyk.ender_feet": "Ender Infused Heels",
 
   "item.minecraftmystyk.ender_sword": "Ender Infused Sword",
+  "item.minecraftmystyk.ender_spear": "Ender Infused Spear",
   "item.minecraftmystyk.ender_pickaxe": "Ender Infused Pickaxe",
   "item.minecraftmystyk.ender_axe": "Ender Infused Axe",
   "item.minecraftmystyk.ender_shovel": "Ender Infused Shovel",
@@ -29,6 +30,7 @@
   "item.minecraftmystyk.echo_feet": "Echoing Heels",
 
   "item.minecraftmystyk.echo_sword": "Echoing Sword",
+  "item.minecraftmystyk.echo_spear": "Echoing Spear",
   "item.minecraftmystyk.echo_pickaxe": "Echoing Pickaxe",
   "item.minecraftmystyk.echo_axe": "Echoing Axe",
   "item.minecraftmystyk.echo_shovel": "Echoing Shovel",
@@ -38,11 +40,11 @@
 
   "item.minecraftmystyk.ender_bow": "Ender Strung Bow",
 
-  "block.minecraftmystyk.ender_shard_block": "Ender Shard Block",
-  "block.minecraftmystyk.ender_shard_ore": "Ender Shard Ore",
+  "item.minecraftmystyk.ender_shard_block": "Ender Shard Block",
+  "item.minecraftmystyk.ender_shard_ore": "Ender Shard Ore",
 
-  "block.minecraftmystyk.advanced_sculk_catalyst": "Advanced_Sculk_Catalyst",
-  "block.minecraftmystyk.echoing_ore": "Echoing Ore",
+  "item.minecraftmystyk.advanced_sculk_catalyst": "Advanced Sculk Catalyst",
+  "item.minecraftmystyk.echoing_ore": "Echoing Ore",
 
   "trim_material.minecraftmystyk.ender_shard": "Ender Shard Material",
   "trim_material.minecraftmystyk.advanced_echo_shard": "Advanced Echo Material",

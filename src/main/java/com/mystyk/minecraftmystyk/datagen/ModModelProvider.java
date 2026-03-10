@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
 import net.minecraft.client.data.Models;
+import net.minecraft.client.data.TextureMap;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -27,7 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.ENDER_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_SHARD_FRAGMENT, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ENDER_INFUSED_HANDLE, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.ENDER_INFUSED_HANDLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADVANCED_ECHO_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADVANCED_ECHO_FRAGMENT, Models.GENERATED);
 
@@ -51,8 +52,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ModItems.ENDER_INFUSED_BRACERS, ModArmorMaterials.ENDER_SHARD_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
         itemModelGenerator.registerArmor(ModItems.ENDER_INFUSED_GREAVES, ModArmorMaterials.ENDER_SHARD_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
         itemModelGenerator.registerArmor(ModItems.ENDER_INFUSED_HEELS, ModArmorMaterials.ENDER_SHARD_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
-
-
         itemModelGenerator.register(ModItems.ECHOING_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ECHOING_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ECHOING_AXE, Models.HANDHELD);

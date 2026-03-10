@@ -46,7 +46,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 offerSmithingTrimRecipe(ModItems.PULSE_SMITHING_TEMPLATE, ModTrimPatterns.PULSE,
                         RegistryKey.of(RegistryKeys.RECIPE, Identifier.ofVanilla("pulse")));
-                offerSmithingTemplateCopyingRecipe(ModItems.PULSE_SMITHING_TEMPLATE, ModItems.ADVANCED_ECHO_SHARD);
+                offerSmithingTemplateCopyingRecipe(ModItems.PULSE_SMITHING_TEMPLATE, ModItems.ADVANCED_ECHO_FRAGMENT);
+
+
+                offerSmithingTemplateCopyingRecipe(ModItems.ENDER_UPGRADE_SMITHING_TEMPLATE, ModItems.ENDER_SHARD);
+                offerSmithingTemplateCopyingRecipe(ModItems.ECHO_UPGRADE_SMITHING_TEMPLATE, ModItems.ADVANCED_ECHO_SHARD);
 
 
                 SmithingTransformRecipeJsonBuilder.create(
@@ -265,26 +269,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
 
-                createShaped(RecipeCategory.MISC, ModItems.ENDER_SHARD)
-                        .pattern("ESE")
-                        .pattern("S S")
-                        .pattern("ESE")
-                        .input('S', ModItems.ENDER_SHARD_FRAGMENT)
-                        .input('E', Items.EMERALD)
-                        .criterion(hasItem(ModItems.ENDER_SHARD_FRAGMENT), conditionsFromItem(ModItems.ENDER_SHARD_FRAGMENT))
-                        .offerTo(exporter, "ender_shard_from_fragment");
-
-                createShaped(RecipeCategory.MISC, ModItems.ADVANCED_ECHO_SHARD)
-                        .pattern("QSQ")
-                        .pattern("SCS")
-                        .pattern("QSQ")
-                        .input('S', ModItems.ADVANCED_ECHO_FRAGMENT)
-                        .input('Q', Items.QUARTZ)
-                        .input('C', Items.SCULK_CATALYST)
-                        .criterion(hasItem(ModItems.ADVANCED_ECHO_FRAGMENT), conditionsFromItem(ModItems.ADVANCED_ECHO_FRAGMENT))
-                        .offerTo(exporter);
-
-
         /*ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ENDER_MACE)
                 .pattern("   ")
                 .pattern(" C ")
@@ -294,14 +278,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ENDER_INFUSED_HANDLE), conditionsFromItem(ModItems.ENDER_INFUSED_HANDLE))
                 .offerTo(exporter, Identifier.of(MinecraftMystyk.MOD_ID, "ender_mace"));*/
 
-                createShaped(RecipeCategory.COMBAT, ModItems.ENDER_INFUSED_HANDLE)
+                /*createShaped(RecipeCategory.COMBAT, ModItems.ENDER_INFUSED_HANDLE)
                         .pattern(" F ")
                         .pattern("FBF")
                         .pattern(" F ")
                         .input('B', Items.BREEZE_ROD)
                         .input('F', ModItems.ENDER_SHARD_FRAGMENT)
                         .criterion(hasItem(ModItems.ENDER_SHARD_FRAGMENT), conditionsFromItem(ModItems.ENDER_SHARD_FRAGMENT))
-                        .offerTo(exporter);
+                        .offerTo(exporter);*/
 
                 createShapeless(RecipeCategory.MISC, ModItems.ENDER_SHARD, 9)
                         .input(ModBlocks.ENDER_SHARD_BLOCK)

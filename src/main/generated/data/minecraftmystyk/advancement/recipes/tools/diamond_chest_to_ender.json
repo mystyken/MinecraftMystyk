@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:diamond_chest_to_ender"
+        "recipe": "minecraftmystyk:diamond_chest_to_ender"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:diamond_chest_to_ender"
+      "minecraftmystyk:diamond_chest_to_ender"
     ]
   }
 }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:ender_shard"
+        "recipe": "minecraftmystyk:ender_shard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:ender_shard"
+      "minecraftmystyk:ender_shard"
     ]
   }
 }

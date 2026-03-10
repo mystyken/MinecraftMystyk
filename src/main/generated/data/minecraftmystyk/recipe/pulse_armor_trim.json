@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:diamond",
+    "C": "minecraftmystyk:advanced_echo_fragment",
+    "S": "minecraftmystyk:pulse_armor_trim"
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraftmystyk:pulse_armor_trim"
+  }
+}

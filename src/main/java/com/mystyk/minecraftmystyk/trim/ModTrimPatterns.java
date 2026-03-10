@@ -22,8 +22,7 @@ public class ModTrimPatterns {
     }
 
     private static void register(Registerable<ArmorTrimPattern> context, Item item, RegistryKey<ArmorTrimPattern> key) {
-        ArmorTrimPattern trimPattern = new ArmorTrimPattern(key.getValue(), Registries.ITEM.getEntry(item),
-                Text.translatable(Util.createTranslationKey("trim_pattern", key.getValue())), false);
+        ArmorTrimPattern trimPattern = new ArmorTrimPattern(key.getValue(), Text.translatable(Util.createTranslationKey("trim_pattern", key.getValue())), false);
         context.register(key, trimPattern);
     }
 

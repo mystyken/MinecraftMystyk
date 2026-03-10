@@ -30,7 +30,6 @@ public class MidasWand extends Item {
                     Blocks.DEEPSLATE_DIAMOND_ORE, Blocks.DEEPSLATE_GOLD_ORE
             );
     public MidasWand(Settings settings) {
-
         super(settings);
     }
 
