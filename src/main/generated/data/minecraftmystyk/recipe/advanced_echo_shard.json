@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": "minecraftmystyk:advanced_echo_fragment",
+    "Q": "minecraft:quartz"
+  },
+  "pattern": [
+    "FQF",
+    "Q Q",
+    "FQF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraftmystyk:advanced_echo_shard"
+  }
+}

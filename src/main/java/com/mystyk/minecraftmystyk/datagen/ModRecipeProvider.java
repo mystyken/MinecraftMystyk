@@ -293,6 +293,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard_from_block")));
 
 
+                createShaped(RecipeCategory.COMBAT, ModItems.ADVANCED_ECHO_SHARD)
+                        .pattern("FQF")
+                        .pattern("Q Q")
+                        .pattern("FQF")
+                        .input('Q', Items.QUARTZ)
+                        .input('F', ModItems.ADVANCED_ECHO_FRAGMENT)
+                        .criterion(hasItem(ModItems.ADVANCED_ECHO_FRAGMENT), conditionsFromItem(ModItems.ADVANCED_ECHO_SHARD))
+                        .offerTo(exporter);
 
             }
         };
