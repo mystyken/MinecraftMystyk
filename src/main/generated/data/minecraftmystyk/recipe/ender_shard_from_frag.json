@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": "minecraftmystyk:ender_shard_fragment",
+    "Q": "minecraft:emerald"
+  },
+  "pattern": [
+    "FQF",
+    "Q Q",
+    "FQF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraftmystyk:ender_shard"
+  }
+}

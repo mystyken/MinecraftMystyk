@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "advanced_echo_shard",
+  "ingredient": "minecraftmystyk:echoing_ore",
+  "result": {
+    "id": "minecraftmystyk:advanced_echo_fragment"
+  }
+}

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_advanced_echo_fragment": {
+    "has_echoing_ore": {
       "conditions": {
         "items": [
           {
-            "items": "minecraftmystyk:advanced_echo_fragment"
+            "items": "minecraftmystyk:echoing_ore"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraftmystyk:advanced_echo_shard"
+        "recipe": "minecraftmystyk:advanced_echo_fragment_from_blasting_echoing_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_advanced_echo_fragment"
+      "has_echoing_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraftmystyk:advanced_echo_shard"
+      "minecraftmystyk:advanced_echo_fragment_from_blasting_echoing_ore"
     ]
   }
 }

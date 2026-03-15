@@ -38,6 +38,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 offerSmelting(ENDER_SHARD_SMELTABLES, RecipeCategory.MISC, ModItems.ENDER_SHARD_FRAGMENT, .5f, 200, "ender_shard");
                 offerBlasting(ENDER_SHARD_SMELTABLES, RecipeCategory.MISC, ModItems.ENDER_SHARD_FRAGMENT, .5f, 100, "ender_shard");
 
+                List<ItemConvertible> ADVANCED_ECHO_SHARD_SMELTABLES = List.of(ModBlocks.ECHOING_ORE);
+
+                offerSmelting(ADVANCED_ECHO_SHARD_SMELTABLES, RecipeCategory.MISC, ModItems.ADVANCED_ECHO_FRAGMENT, .5f, 200, "advanced_echo_shard");
+                offerBlasting(ADVANCED_ECHO_SHARD_SMELTABLES, RecipeCategory.MISC, ModItems.ADVANCED_ECHO_FRAGMENT, .5f, 100, "advanced_echo_shard");
+
                 offerReversibleCompactingRecipes(RecipeCategory.BUILDING_BLOCKS, ModItems.ENDER_SHARD, RecipeCategory.DECORATIONS, ModBlocks.ENDER_SHARD_BLOCK);
 
                 offerSmithingTrimRecipe(ModItems.FENDER_SMITHING_TEMPLATE, ModTrimPatterns.FENDER,
@@ -240,14 +245,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter, "diamond_boots_to_echo");
 
 
-                /*createShaped(RecipeCategory.MISC, ModBlocks.ENDER_SHARD_BLOCK)
-                        .pattern("EEE")
-                        .pattern("EEE")
-                        .pattern("EEE")
-                        .input('E', ModItems.ENDER_SHARD)
-                        .criterion(hasItem(ModItems.ENDER_SHARD), conditionsFromItem(ModItems.ENDER_SHARD))
-                        .offerTo(exporter);*/
-
                 createShaped(RecipeCategory.MISC, ModBlocks.ADVANCED_SCULK_CATALYST)
                         .pattern("EEE")
                         .pattern("EEE")
@@ -287,10 +284,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.ENDER_SHARD_FRAGMENT), conditionsFromItem(ModItems.ENDER_SHARD_FRAGMENT))
                         .offerTo(exporter);*/
 
-                createShapeless(RecipeCategory.MISC, ModItems.ENDER_SHARD, 9)
-                        .input(ModBlocks.ENDER_SHARD_BLOCK)
-                        .criterion(hasItem(ModBlocks.ENDER_SHARD_BLOCK), conditionsFromItem(ModBlocks.ENDER_SHARD_BLOCK))
-                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard_from_block")));
 
 
                 createShaped(RecipeCategory.COMBAT, ModItems.ADVANCED_ECHO_SHARD)
@@ -299,8 +292,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("FQF")
                         .input('Q', Items.QUARTZ)
                         .input('F', ModItems.ADVANCED_ECHO_FRAGMENT)
-                        .criterion(hasItem(ModItems.ADVANCED_ECHO_FRAGMENT), conditionsFromItem(ModItems.ADVANCED_ECHO_SHARD))
+                        .criterion(hasItem(ModItems.ADVANCED_ECHO_FRAGMENT), conditionsFromItem(ModItems.ADVANCED_ECHO_FRAGMENT))
                         .offerTo(exporter);
+
+                createShaped(RecipeCategory.COMBAT, ModItems.ENDER_SHARD)
+                        .pattern("FQF")
+                        .pattern("Q Q")
+                        .pattern("FQF")
+                        .input('Q', Items.EMERALD)
+                        .input('F', ModItems.ENDER_SHARD_FRAGMENT)
+                        .criterion(hasItem(ModItems.ENDER_SHARD_FRAGMENT), conditionsFromItem(ModItems.ENDER_SHARD_FRAGMENT))
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard_from_frag")));
+
+                createShapeless(RecipeCategory.MISC, ModItems.ENDER_SHARD, 9)
+                        .input(ModBlocks.ENDER_SHARD_BLOCK)
+                        .criterion(hasItem(ModBlocks.ENDER_SHARD_BLOCK), conditionsFromItem(ModBlocks.ENDER_SHARD_BLOCK))
+                        .offerTo(exporter, RegistryKey.of(RegistryKeys.RECIPE, Identifier.of(MinecraftMystyk.MOD_ID, "ender_shard_from_block")));
 
             }
         };
